@@ -7,18 +7,15 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 class Ejercicio02 : AppCompatActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         val etName = findViewById<EditText>(R.id.etName)
         val etPhone = findViewById<EditText>(R.id.etPhone)
         val etProducts = findViewById<EditText>(R.id.etProducts)
         val etCity = findViewById<EditText>(R.id.etCity)
         val etAddress = findViewById<EditText>(R.id.etAddress)
         val btnAddOrder = findViewById<Button>(R.id.btnAddOrder)
-
         btnAddOrder.setOnClickListener {
             val name = etName.text.toString().trim()
             val phone = etPhone.text.toString().trim()
